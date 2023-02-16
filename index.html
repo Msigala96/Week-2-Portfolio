@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="Assets/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="Assets/style.css">
 </head>
+
 <body>
-    <Header class="Header">
-        <nav id="Navbar">
-            <ul>
-                <li><a href="news.asp">Contact Me</a></li>
-                <li><a href="#first-done">My Content</a></li>
-                <li><a href="#Myself">About Me</a></li>
-              </ul>
-              
-        </nav>
-    </Header>
+  <Header class="Header">
+    <nav id="Navbar">
+      <ul>
+        <li><a href="#Contact Us">Contact Me</a></li>
+        <li><a href="#first-done">My Content</a></li>
+        <li><a href="#Myself">About Me</a></li>
+      </ul>
 
-    <section id="Myself">
-        <img id="mike-pic" src="Assets/Images/Mike.jpg" alt="Hero image">
-<p class="my-info">This a paragraph describing who I am and what I am able to do. At the moment I dont have much knowledge, but by the end of this bootcamp I will fill this portfolio up with my hard work to show to potential employers!
-<span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-</p>
-    </section>
-    <section>
-<article id="first-done">
-    <h2>My First Project!</h2>
-    <img id="Horiseon-proj." src="Assets/Images/my first assignment.png" alt="Horiseon" style="width:200px;">
-    
-    <p class="my-proj">In this project, I was given the task of code refactoring. Essentially I took the code that was given, and I gave each of the sections and articles meaning within the code itself. I kept the integrity of the page the same for the benefit of the viewers.</p>
+    </nav>
+  </Header>
 
-</article>
-    </section>
-    
+  <section id="myself">
+    <img id="mike-pic" src="Assets/Images/Mike.jpg" alt="Hero image">
+    <p class="my-info">This a paragraph describing who I am and what I am able to do. At the moment I dont have much
+      knowledge, but by the end of this bootcamp I will fill this portfolio up with my hard work to show to potential
+      employers!
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </section>
+  <section>
+    <article id="first-done">
+      <h2>My First Project!</h2>
+      <a href="https://msigala96.github.io/First-week-challenge/#search-engine-optimization"> <img id="Horiseon-proj"
+          src="Assets/Images/my first assignment.png" alt="Horiseon"></a>
 
-<footer class="footer">
-  <p> © copyright</p>
-</footer>
+      <p class="my-proj"> In this project, I was given the task of code refactoring. Essentially I took the code that
+        was given, and I gave each of the sections and articles meaning within the code itself. I kept the integrity of
+        the page the same for the benefit of the viewers.</p>
+
+    </article>
+  </section>
+  <section class="Alt-projects">
+
+    <article id="nothing">
+      <h2>Work in progress...</h2>
+      <a href="https://msigala96.github.io/prework-study-guide/"><img id="standby" src="Assets/Images/study-guide.png" alt="Study guide"></a>
+    </article>
+
+    <article id="mini-proj">
+      <h2>Work in progress...</h2>
+      <a href="https://msigala96.github.io/Mini-Project/"><img id="standby" src="Assets/Images/Standby.jpg"
+          alt="Work in progress"></a>
+      <p class="funny-proj">This is an earlier project that we had worked on in class. I plan on updating this for practice!</p>
+
+    </article>
+  </section>
+
+  <form id="Contact Me">
+    <table>
+      <h2 class="Contact-Item-1">Contact Me!</h2>
+      <tr>
+        <td>First and Last name:</td>
+        <td><input type="text" placeholder="First and Last name" name="name"></td>
+      </tr>
+      <tr>
+        <td>E-mail:</td>
+        <td><input type="text" placeholder="Type your E-mail" name="Email"></td>
+      </tr>
+      <tr>
+        <td>Message:</td>
+        <td><input type="text3" placeholder="Type your message" name="Message"></td>
+      </tr>
+    </table>
+    <input type="Submit" value="Send">
+  </form>
+
+  <footer class="footer">
+    <p> © Copyright Big Mikes Sites 2023</p>
+  </footer>
 </body>
+
 </html>
