@@ -132,8 +132,16 @@ font-size: xx-large;
   width: 56px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
 
+
+}
+
+.fa-brands, .fa-solid {
+  padding: 20px;
+   font-size: 30px;
+  width: 56px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .fa:hover {
@@ -141,7 +149,7 @@ font-size: xx-large;
 }
 
 .fa-facebook, .fa-instagram, .fa-github-square {
-  background: #0066ff;
+  background: #000000;
   color: white;
 }
 
@@ -151,3 +159,4 @@ font-size: xx-large;
   text-align: center;
   color: bisque;
 }
+
