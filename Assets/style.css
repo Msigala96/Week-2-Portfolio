@@ -5,26 +5,28 @@
 }
 
 body {
-  background-image: radial-gradient(#000000 1.4000000000000001px, #002508 1.4000000000000001px);
+  background-image: radial-gradient(#000000 1.4000000000000001px, #333333d8 1.4000000000000001px);
   background-size: 28px 28px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
 }
-
+/* Between lines 16-43 I have my nav bar styling displayed, it will wrap when the screen gets small enough, and when any of the tabs are clicked they will take you to the corresponding area on the page */
 #Navbar ul {
-  top: 0px;
+  top: 6px;
   position: fixed;
   list-style-type: none;
- display: flex;
- justify-content: flex-end;
-  margin-left: 40%;
-  padding: 0;
   overflow: hidden;
   background-color: #474747ae;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li {
   display: inline;
   float: right;
+
 }
 
 
@@ -39,7 +41,7 @@ li a {
 li a:hover {
   background-color: #068de1;
 }
-
+/*Lines 45-68 contain my litte bio*/
 #myself {
   display: flex;
   flex-direction: row;
@@ -61,11 +63,21 @@ li a:hover {
 .my-info {
   font-size: x-large;
   color: rgb(255, 255, 255);
-  padding: 25px;
+  padding: 212px;
+  padding-top: 10px;
 } 
+/* Lines 70-128 contain the projects that I have done, I have a flex display that wraps when the screen gets smaller*/
+.Alt-projects, .week-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  }
+
 .MFP {
   display: table;
 }
+
 #first-done {
   padding: 94px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -80,12 +92,6 @@ article {
   display: inline-block;
 }
 
-.Alt-projects, .week-1 {
-display: flex;
-align-items: center;
-justify-content: space-around;
-}
-
 #mini-proj, #nothing {
   width: auto;
   padding: 44px;
@@ -95,8 +101,6 @@ justify-content: space-around;
   border-radius: 15%;
   color: #ffffff;
 }
-
-
 
 #Horiseon-proj {
   height: 500px;
@@ -118,14 +122,16 @@ justify-content: space-around;
 }
 .funny-proj,.study-guide {
   width: 300px;
-  display: flex;
-  flex-direction: column;
-    flex-wrap: wrap;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: xx-large;
   color: rgb(255, 255, 255);
 }
-
+/*Lines 130-160 contain the stlying for my social media links, with clickable icons */
+#contact-me {
+  display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -137,7 +143,7 @@ font-size: xx-large;
 }
 
 .fa-brands, .fa-solid {
-  padding: 20px;
+  padding: 12px;
    font-size: 30px;
   width: 56px;
   text-align: center;
@@ -149,14 +155,19 @@ font-size: xx-large;
 }
 
 .fa-facebook, .fa-instagram, .fa-github-square {
-  background: #000000;
+  background: #626262;
   color: white;
 }
-
+/* This is just a simple footer */
 .footer {
   padding: 50px;
   bottom: auto;
   text-align: center;
   color: bisque;
 }
-
+/*I added a media query for my nave bar, but im still learning this feature so that is all it will have for now*/
+@media screen and (max-width: 992px) {
+  #Navbar ul {
+    background: #772014;
+  }
+}
