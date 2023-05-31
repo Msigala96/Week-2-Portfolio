@@ -7,7 +7,7 @@
 body {
   background-image: radial-gradient(#000000 1.4000000000000001px, #333333d8 1.4000000000000001px);
   background-size: 28px 28px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction:column;
   flex-wrap: wrap;
